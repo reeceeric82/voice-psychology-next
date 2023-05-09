@@ -6,7 +6,7 @@ import {
 	Container,
 } from '@chakra-ui/react';
 import theme from "./theme";
-import BackToTopButton from "./ScrollToTop";
+import BackToTopButton from "./BackToTop";
 
 type LayoutProps = {
 	children: ReactNode
