@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="300"
+   viewBox="0 0 300 300"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="voice-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="1.8431917"
+     inkscape:cx="74.056324"
+     inkscape:cy="147.02757"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3">
+    <sodipodi:guide
+       position="0,150"
+       orientation="0,-1"
+       id="guide380"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="150,300"
+       orientation="1,0"
+       id="guide382"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#ffffff"
+       id="rect111"
+       width="300"
+       height="300"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     sodipodi:insensitive="true">
+    <path
+       id="text276"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:328.648px;font-family:Arapey;-inkscape-font-specification:Arapey;fill:#000000;stroke-width:27.3874"
+       d="m 58.636718,29.458659 v 5.914063 h 12.158203 c 3.067378,0 5.150601,1.534184 6.246094,4.601563 L 101.0332,109.96452 h 28.5293 L 104.64648,35.372722 h 16.43164 v -5.914063 z m 138.031252,0 v 5.914063 h 16.43164 l -25.52539,74.591798 h 11.39258 l 23.99218,-69.990235 c 1.0955,-3.067379 3.17872,-4.601563 6.2461,-4.601563 h 12.1582 v -5.914063 z m -79.85352,126.541021 27.59766,80.50586 h 11.17578 l 27.59766,-80.50586 h -11.36524 l -13.60351,39.7539 -13.2793,-39.7539 z" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:41.7018px;font-family:Arapey;-inkscape-font-specification:Arapey;fill:#ffffff;stroke-width:3.47515"
+       x="84.769669"
+       y="146.69604"
+       id="text748"><tspan
+         sodipodi:role="line"
+         id="tspan746"
+         x="84.769669"
+         y="146.69604"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Symbola;-inkscape-font-specification:Symbola;fill:#1a1a1a;stroke-width:3.47515">VOICE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.8459px;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:#1a1a1a;stroke-width:2.73716"
+       x="39.113007"
+       y="273.68903"
+       id="text904"><tspan
+         sodipodi:role="line"
+         id="tspan902"
+         x="39.113007"
+         y="273.68903"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Symbola;-inkscape-font-specification:Symbola;stroke-width:2.73716">PSYCHOLOGY</tspan></text>
+  </g>
+</svg>
