@@ -1,47 +1,46 @@
-import Nav from "@/components/Nav";
 import { 
 	Box, 
-	ChakraProvider, 
-	Container, 
 	Heading, 
 	Link, 
 	UnorderedList, 
 	ListItem, 
 	Stack, 
 	StackDivider, 
-	Text, 
+	Text,
 } from "@chakra-ui/react"; 
-import Head from "next/head";
-import theme from "./theme";
+import Layout from "@/components/Layout";
 
 const Datenschutz = () => {
-
+	const title = "Voice | Datenschutz";
 	return (
-		<ChakraProvider theme={theme}>
-			<Head>
-				<title>Voice | Datenschutz</title>
-			</Head>
-			<main>
-				<Nav />
-				<Container maxW={'6xl'}>
-					<Stack 
-						as={Box}
-						textAlign={'center'}
-						spacing={{ base: 8, md: 14 }}
-						py={{ base: 20, md: 6 }}>
-						<StackDivider />
-						<Heading>Datenschutzerklarung & Impressum</Heading>
-						<StackDivider />
-						{/* Section 1 */}
-						<Stack textAlign={'left'}>
-							<Stack spacing={6}>
-							<Text as={'b'} fontSize={'3xl'}>1. Datenschutz aud einen Blick</Text>
-							<Text as={'b'} fontSize={'2xl'}>1.1 Allgemeine Hinweise</Text>
-							<Text fontSize={'xl'}>
-								Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. 
-								Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. 
-								Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
-							</Text>
+		<Layout title={title}>
+			<Stack 
+				as={Box}
+				textAlign={'center'}
+				spacing={{ base: 8, md: 14 }}
+				py={{ base: 20, md: 6 }}>
+				<StackDivider />
+				<Heading>Datenschutzerklarung & Impressum</Heading>
+				<Stack
+					as={Box}
+					textAlign={'center'}>
+					<Link href="#datenschutz-auf-einen-blick">Datenschutz auf einen Blick</Link>
+				<Link href="#allgemeine-hinweise-und-pflichtinformationen">Allgemeine Hinweise und Pflichtinformation</Link>
+				<Link href="#datenerfassung-aud-unserer-website">Datenerfassung auf unserer Website</Link>
+			</Stack>
+			<StackDivider />
+			{/* Section 1 */}
+			<Stack textAlign={'left'}>
+				<Stack spacing={6}>
+					<Stack divider={<StackDivider />}id="datenschutz-auf-einen-blick">
+						<Text as={'b'} fontSize={'3xl'}>1. Datenschutz auf einen Blick</Text>
+						<Text as={'b'} fontSize={'2xl'}>1.1 Allgemeine Hinweise</Text>
+					</Stack>
+					<Text fontSize={'xl'}>
+						Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. 
+						Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. 
+						Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
+					</Text>
 
 							<Text as={'b'} fontSize={'2xl'}>1.2 Datenerfassung auf unserer Website</Text>
 							<Text as={'b'} fontSize={'xl'}>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</Text>
@@ -65,33 +64,35 @@ const Datenschutz = () => {
 								Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
 							</Text>
 
-							<Text as={'b'} fontSize={'2xl'}>1.3 Analyse-Tools und Tools von Drittanbietern</Text>
-							<Text fontSize={'xl'}>
-								Beim Besuch unserer Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. 
-								Das geschieht vor allem mit Cookies und mit sogenannten Analyseprogrammen. 
-								Die Analyse Ihres Surf-Verhaltens erfolgt in der Regel anonym; das Surf-Verhalten kann nicht zu Ihnen zurückverfolgt werden. 
-								Sie können dieser Analyse widersprechen oder sie durch die Nichtbenutzung bestimmter Tools verhindern. 
-								Detaillierte Informationen dazu finden Sie in der folgenden Datenschutzerklärung. 
-								Sie können dieser Analyse widersprechen. 
-								Über die Widerspruchsmöglichkeiten werden wir Sie in dieser Datenschutzerklärung informieren.
-							</Text>
-							</Stack>
-							{/* End Section 1 */}
-							<StackDivider />
-							{/* Section 2 */}
-							<Stack spacing={6}>
+						<Text as={'b'} fontSize={'2xl'}>1.3 Analyse-Tools und Tools von Drittanbietern</Text>
+						<Text fontSize={'xl'}>
+							Beim Besuch unserer Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. 
+							Das geschieht vor allem mit Cookies und mit sogenannten Analyseprogrammen. 
+							Die Analyse Ihres Surf-Verhaltens erfolgt in der Regel anonym; das Surf-Verhalten kann nicht zu Ihnen zurückverfolgt werden. 
+							Sie können dieser Analyse widersprechen oder sie durch die Nichtbenutzung bestimmter Tools verhindern. 
+							Detaillierte Informationen dazu finden Sie in der folgenden Datenschutzerklärung. 
+							Sie können dieser Analyse widersprechen. 
+							Über die Widerspruchsmöglichkeiten werden wir Sie in dieser Datenschutzerklärung informieren.
+						</Text>
+					</Stack>
+					{/* End Section 1 */}
+					<StackDivider />
+					{/* Section 2 */}
+					<Stack spacing={6}>
+						<Stack divider={<StackDivider />} id="allgemeine-hinweise-und-pflichtinformationen">
 							<Text as={'b'} fontSize={'3xl'}>2. Allgemeine Hinweise und Pflichtinformation</Text>
 							<Text as={'b'} fontSize={'2xl'}>2.1 Datenschutz</Text>
-							<Text fontSize={'xl'}>
-								Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. 
-								Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. 
-								Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. 
-								Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. 
-								Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. 
-								Sie erläutert auch, wie und zu welchem Zweck das geschieht. Wir weisen darauf hin, 
-								dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. 
-								Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
-							</Text>
+						</Stack>
+						<Text fontSize={'xl'}>
+							Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. 
+							Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. 
+							Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. 
+							Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. 
+							Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. 
+							Sie erläutert auch, wie und zu welchem Zweck das geschieht. Wir weisen darauf hin, 
+							dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. 
+							Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+						</Text>
 
 							<Text as={'b'} fontSize={'2xl'}>2.2 Hinweise zur veranrwortlichen Stelle</Text>
 							<Text as={'b'} fontSize={'xl'}>Die veranrwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</Text>
@@ -139,25 +140,27 @@ const Datenschutz = () => {
 								Ihrer Browserzeile. Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
 							</Text>
 
-							<Text as={'b'} fontSize={'2xl'}>2.7 Auskunft, Sperrung, Löschung</Text>
-							<Text fontSize={'xl'}>
-								Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, 
-								deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. 
-								ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. 
-								Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.
-							</Text>
-							</Stack>
-							{/* End Section 2 */}
-							<StackDivider />
-							{/* Section 3 */}
-							<Stack spacing={6}>
+						<Text as={'b'} fontSize={'2xl'}>2.7 Auskunft, Sperrung, Löschung</Text>
+						<Text fontSize={'xl'}>
+							Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, 
+							deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. 
+							ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. 
+							Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.
+						</Text>
+					</Stack>
+					{/* End Section 2 */}
+					<StackDivider />
+					{/* Section 3 */}
+					<Stack spacing={6}>
+						<Stack divider={<StackDivider />} id="datenerfassung-aud-unserer-website">
 							<Text as={'b'} fontSize={'3xl'}>3. Datenerfassung auf unserer Website</Text>
 							<Text as={'b'} fontSize={'2xl'}>3.1 Cookies</Text>
-							<Text fontSize={'xl'}>
-								Die Internetseiten verwenden teilweise so genannte Cookies. 
-								Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, 
-								effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.
-							</Text>
+						</Stack>
+						<Text fontSize={'xl'}>
+							Die Internetseiten verwenden teilweise so genannte Cookies. 
+							Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, 
+							effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.
+						</Text>
 
 							<Text fontSize={'xl'}>
 								Die meisten der von uns verwendeten Cookies sind so genannte “Session-Cookies”. 
@@ -295,23 +298,21 @@ const Datenschutz = () => {
 								Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.
 							</Text>
 
-									<Text as={'b'} fontSize={'2xl'}>3.8 Datenübermittlung bei Vertragsschluss für Dienstleistungen und digitale Inhalte</Text>
-									<Text fontSize={'xl'}>
-										Wir übermitteln personenbezogene Daten an Dritte nur dann, wenn dies im Rahmen der Vertragsabwicklung notwendig ist, 
-										etwa an das mit der Zahlungsabwicklung beauftragte Kreditinstitut. 
-										Eine weitergehende Übermittlung der Daten erfolgt nicht bzw. nur dann, 
-										wenn Sie der Übermittlung ausdrücklich zugestimmt haben. 
-										Eine Weitergabe Ihrer Daten an Dritte ohne ausdrückliche Einwilligung, etwa zu Zwecken der Werbung, erfolgt nicht. 
-										Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, 
-										der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.
-									</Text>
-								</Stack>
-								{/* End Section 3 */}
-							</Stack>
+						<Text as={'b'} fontSize={'2xl'}>3.8 Datenübermittlung bei Vertragsschluss für Dienstleistungen und digitale Inhalte</Text>
+						<Text fontSize={'xl'}>
+							Wir übermitteln personenbezogene Daten an Dritte nur dann, wenn dies im Rahmen der Vertragsabwicklung notwendig ist, 
+							etwa an das mit der Zahlungsabwicklung beauftragte Kreditinstitut. 
+							Eine weitergehende Übermittlung der Daten erfolgt nicht bzw. nur dann, 
+							wenn Sie der Übermittlung ausdrücklich zugestimmt haben. 
+							Eine Weitergabe Ihrer Daten an Dritte ohne ausdrückliche Einwilligung, etwa zu Zwecken der Werbung, erfolgt nicht. 
+							Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, 
+							der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.
+						</Text>
 					</Stack>
-				</Container>
-			</main>
-		</ChakraProvider>
+					{/* End Section 3 */}
+				</Stack>
+			</Stack>
+		</Layout>
 	)
 }
 

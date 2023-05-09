@@ -1,21 +1,11 @@
-import Head from 'next/head';
 // import { Inter } from 'next/font/google';
-import Nav from '@/components/Nav';
-import { Box, ChakraProvider, Container, Stack, Heading, Button, Text, Center, Link } from '@chakra-ui/react';
-import theme from './theme';
+import { Box, Stack, Heading, Button, Text, Center, Link } from '@chakra-ui/react';
+import Layout from '@/components/Layout';
 
 export default function Home() {
-
+	const title = "Voice | Home";
 	return 	(	
-		<ChakraProvider theme={theme}>
-			<Head>
-				<title>Voice</title>
-				<meta name="description" content="Voice Psychology nextjs app" />
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-			<main>
-				<Nav />
-				<Container maxW={'3xl'}>
+	<Layout title={title}>
 					<Stack 
 						as={Box}
 						textAlign={'center'}
@@ -40,8 +30,6 @@ export default function Home() {
 							In meiner Freizeit gehe ich am liebsten auf Rock, Metal und Punk Konzerte oder mache selbst Musik.
 						</Text>
 					</Stack>
-				</Container>
-			</main>
-		</ChakraProvider>
+		</Layout>
 	)
 }

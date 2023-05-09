@@ -2,28 +2,22 @@ import {
 	Box,
 	Button,
 	Center,
-	ChakraProvider,
-	Container,
 	Heading,
 	Stack,
 	Text,
 } from "@chakra-ui/react";
-import Nav from "../components/Nav";
-import theme from "./theme";
 import Link from "next/link";
+import Layout from "@/components/Layout";
 
 const FourOhFour = () => {
 	return (
-		<ChakraProvider theme={theme}>
-			<main>
-				<Nav />
-				<Container maxW={'3xl'}>
+		<Layout title="404">
 					<Stack 
 						as={Box}
 						textAlign={'center'}
-						spacing={{ base: 8, md: 14 }}
+						spacing={{ base: 8, md: 5 }}
 						py={{ base: 20, md: 6 }}>
-						<Heading>404</Heading>
+						<Heading as={'u'} fontSize={'5xl'}>404</Heading>
 						<Text fontSize={'xl'}>Seite nicht gefunden</Text>
 						<Center>
 						<Button>
@@ -31,9 +25,7 @@ const FourOhFour = () => {
 							</Button>
 						</Center>
 					</Stack>
-				</Container>
-			</main>
-		</ChakraProvider>
+			</Layout>
 	)
 }
 
