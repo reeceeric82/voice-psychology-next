@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import Head from 'next/head';
 import Nav from "./Nav";
 import {
@@ -7,11 +6,9 @@ import {
 } from '@chakra-ui/react';
 import theme from "./theme";
 import BackToTopButton from "./BackToTop";
+import LayoutProps from '@/types/LayoutProps';
+import Footer from './Footer';
 
-type LayoutProps = {
-	children: ReactNode
-	title: String
-};
 
 const Layout = ({ children, title }: LayoutProps) => {
 	return (
@@ -27,6 +24,7 @@ const Layout = ({ children, title }: LayoutProps) => {
 					{children}
 				</Container>
 				<BackToTopButton />
+				<Footer />
 			</main>
 		</ChakraProvider>
 		);

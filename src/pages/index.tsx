@@ -1,25 +1,26 @@
 // import { Inter } from 'next/font/google';
-import { Box, Stack, Heading, Button, Text, Center, Link, StackDivider, UnorderedList, List, ListItem } from '@chakra-ui/react';
+import { Box, Stack, Heading, Button, Text, Center, Link, Image, StackDivider, UnorderedList, List, ListItem, HStack, useMediaQuery } from '@chakra-ui/react';
 import Layout from '@/components/Layout';
-import Head from 'next/head';
 
 
 export default function Home() {
+	const [isMobile] = useMediaQuery('(min-width: 700px)');
 	const title = "Voice | Home";
+
 	return 	(	
 		<Layout title={title}>
 			<Stack 
 				as={Box}
 				textAlign={'center'}
 				spacing={{ base: 8, md: 14 }}
-				py={{ base: 20, md: 6 }}>
+				py={{ base: 10, md: 6 }}>
 				<Heading>Willkommen bei Voice</Heading>
 				<Text fontSize={'xl'}>Psychologische Beratunf & Gesangtherapie</Text>
 			</Stack>
-			<Center>
+			<Center 
+				pb={20}>
 				<Button>Mehr erfahren</Button>
 			</Center>
-
 		</Layout>
 	)
 }

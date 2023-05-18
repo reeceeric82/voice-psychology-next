@@ -54,11 +54,9 @@ const MobileNav = ({navLinks}: MobileNavProps) => {
 							<ListItem>
 								<ToggleDarkMode />
 							</ListItem>
-							{/* Future Implementation
  							<ListItem pt={2}>
 								<LanguageSelect />
 							</ListItem>
-							*/}
 						</List>
 					</DrawerBody>
 					<DrawerFooter>
