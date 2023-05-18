@@ -11,7 +11,7 @@ import Layout from "@/components/Layout";
 
 const FourOhFour = () => {
 	return (
-		<Layout title="404">
+		<Layout title="Voice | 404">
 					<Stack 
 						as={Box}
 						textAlign={'center'}

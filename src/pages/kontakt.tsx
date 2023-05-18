@@ -15,6 +15,8 @@ const Kontakt = () => {
 	const title = "Voice | Kontakt";	
 	return (
 		<Layout title={title}>
+
+			{/* Email Section */}
 			<Stack 
 				as={Box}
 				textAlign={'center'}
@@ -30,6 +32,9 @@ const Kontakt = () => {
 						</Link>
 					</Text>
 				</Stack>
+				{/* Email Section End */}
+
+				{/* Social Media Section */}
 				<Stack divider={<StackDivider />} spacing={4}> 
 					<Text fontSize={'3xl'}>Social Media:</Text>
 					<Stack 
