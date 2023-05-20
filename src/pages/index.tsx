@@ -1,7 +1,6 @@
-// import { Inter } from 'next/font/google';
 import { Box, Stack, Heading, Button, Text, Center, Link, Image, StackDivider, UnorderedList, List, ListItem, HStack, useMediaQuery } from '@chakra-ui/react';
 import Layout from '@/components/Layout';
-
+import HomePage from '@/components/Home';
 
 export default function Home() {
 	const [isMobile] = useMediaQuery('(min-width: 700px)');
@@ -21,6 +20,7 @@ export default function Home() {
 				pb={20}>
 				<Button>Mehr erfahren</Button>
 			</Center>
+			<HomePage />
 		</Layout>
 	)
 }

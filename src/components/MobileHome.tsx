@@ -7,17 +7,22 @@ import {
 	Button,
 	Center,
 	Image,
-	useColorModeValue
+	useColorModeValue,
+    VStack
 } from '@chakra-ui/react';
 import Link from 'next/link';
 
-const HomeDesktop = () => {
+const MobileHome = () => {
 	return (
-			<HStack>
+			<VStack>
 			<Stack
 				as={Box}
 				textAlign={'left'}
 				>
+				<Image
+					borderRadius={'half'}
+					src="/carolin-paul-instrament.jpg"
+					alt="Carolin Paul holding an instrament" />
 				<Heading>&#220;ber mich</Heading>
 				<Text fontSize={'xl'}>
 					Ich wurde 1993 in Niederbayern geboren, wuchs dort mit meiner Familie auf und absolvierte 2012 mein Abitur. 
@@ -31,22 +36,17 @@ const HomeDesktop = () => {
 					Im Oktober 2022 begann ich die Ausbildung zur Psychotherapeutin mit Schwerpunkt Kognitive Verhaltenstherapie in Berlin.
 					In meiner Freizeit gehe ich am liebsten auf Rock, Metal und Punk Konzerte oder mache selbst Musik. 
 				</Text>
-					<Box
-						py={2}>
+					<Center>
 						<Button>
 							<Link href="/uber">Weiterlesen</Link>
 						</Button>
-					</Box>
+					</Center>
 			</Stack>
 				<Stack
 					p={8}>
-					<Image
-						borderRadius={'full'}
-						src="/carolin-paul-instrament.jpg"
-						alt="Carolin Paul holding an instrament" />
 				</Stack>
-			</HStack>
+			</VStack>
 	)
 }
 
-export default HomeDesktop;
+export default MobileHome;

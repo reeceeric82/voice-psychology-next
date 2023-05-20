@@ -24,7 +24,6 @@ const Layout = ({ children, title }: LayoutProps) => {
 					{children}
 				</Container>
 				<BackToTopButton />
-				<Footer />
 			</main>
 		</ChakraProvider>
 		);

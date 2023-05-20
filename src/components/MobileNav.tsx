@@ -21,7 +21,6 @@ import ToggleDarkMode from './ToggleDarkMode';
 import MobileNavProps from '@/types/MobileNavProps';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import LanguageSelect from './LanguageSelect';
 
 const MobileNav = ({navLinks}: MobileNavProps) => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -55,7 +54,6 @@ const MobileNav = ({navLinks}: MobileNavProps) => {
 								<ToggleDarkMode />
 							</ListItem>
  							<ListItem pt={2}>
-								<LanguageSelect />
 							</ListItem>
 						</List>
 					</DrawerBody>

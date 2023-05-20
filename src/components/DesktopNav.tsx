@@ -1,7 +1,6 @@
 import NavLink from './NavLink';
 import DesktopNavProps from '@/types/DesktopNavProps';
 import ToggleDarkMode from './ToggleDarkMode';
-import LanguageSelect from './LanguageSelect';
 
 const DesktopNav = ({navLinks}: DesktopNavProps) => {
 	return (	
@@ -10,9 +9,6 @@ const DesktopNav = ({navLinks}: DesktopNavProps) => {
 				<NavLink key={link.name.toLowerCase()} name={link.name} link={link.link} />
 			))}
 			<ToggleDarkMode />
-			{/* Future Implementation
-			<LanguageSelect />
-			*/}
 			</>
 	)
 }
