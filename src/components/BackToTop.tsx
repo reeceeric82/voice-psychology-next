@@ -34,8 +34,8 @@ const BackToTopButton = () => {
       icon={<ArrowUpIcon />}
       onClick={handleButtonClick}
       position="fixed"
-      bottom="20px"
-      right="20px"
+      bottom="60px"
+      right="30px"
       bg="gray.700"
       color="white"
       _hover={{ bg: "gray.500" }}
@@ -48,4 +48,3 @@ const BackToTopButton = () => {
 };
 
 export default BackToTopButton;
-

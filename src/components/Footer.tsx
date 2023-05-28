@@ -22,12 +22,12 @@ const Footer = () => {
       <Flex maxW="container.xl" mx="auto">
         <Box flex="1" textAlign={'center'}>
 					<VStack>
-						<Text as={'b'} fontSize={'lg'}>Designed and Developed by&nbsp;  
-						<Link href="reecerussell.xyz" target="_blank" rel="noopener noreferer">
+						<Text as={'b'} fontSize={'sm'}>Designed and Developed by&nbsp;  
+							<Link href="https://reecerussell.xyz" target="_blank" rel="noopener noreferer">
 						 Reece Russell
 						</Link>
 						</Text>
-					<Text as={'b'} fontSize={'lg'}>Copyright &copy; Voice Psychology {year}</Text>
+					<Text as={'b'} fontSize={'sm'}>Copyright &copy; Voice Psychology {year}</Text>
 					</VStack>
 				</Box>
       </Flex>

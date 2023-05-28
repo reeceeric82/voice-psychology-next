@@ -14,7 +14,7 @@ import NavLinkType from '@/types/NavLinkType';
 const navLinks: NavLinkType[] = [
 	{"name": "Home", "link": "/"},
 	{"name": "Über mich", "link": "/uber"},
-	{"name": "Beratung", "link": "/beratung"},
+	{"name": "Psychologische", "link": "/psychologische"},
 	{"name": "Preise", "link": "/preise"},
 	{"name": "Datenschutz", "link": "/datenschutz"},
 	{"name": "Kontakt", "link": "kontakt"}

@@ -23,6 +23,7 @@ const Layout = ({ children, title }: LayoutProps) => {
 				<Container maxW={'6xl'}>
 					{children}
 				</Container>
+				<Footer />
 				<BackToTopButton />
 			</main>
 		</ChakraProvider>

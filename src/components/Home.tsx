@@ -3,10 +3,10 @@ import DesktopHome from './DesktopHome';
 import MobileHome from './MobileHome'
 
 const HomePage = () => {
-	const [isMobile] = useMediaQuery('(min-width: 700px)');
+	const [isMobile] = useMediaQuery('(max-width: 700px)');
 	return (
 		<>
-			{isMobile ? <DesktopHome /> : <MobileHome />}
+			{isMobile ? <MobileHome /> : <DesktopHome />}
 		</>
 	)
 };

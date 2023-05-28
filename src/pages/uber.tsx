@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import UberPage from "@/components/Uber";
 import { 
 	Box, 
 	Heading,
@@ -11,17 +12,14 @@ const Uber = () => {
 	const title = "Voice | Uber";
 	return (
 		<Layout title={title}>
-			<Stack
+			<Stack 
 				as={Box}
 				textAlign={'center'}
-				spacing={{ base: 8, md: 10 }}
-				py={{ base: 20, md: 6 }}
-				>
-				<Heading>Uber Mich</Heading>
-				<Text fontSize={'xl'}>
-					Hello
-				</Text>
+				spacing={{ base: 8, md: 14 }}
+				py={{ base: 10, md: 6 }}>
+				<Heading>&#220;ber mich</Heading>
 			</Stack>
+			<UberPage />
 		</Layout>
 	)
 };
