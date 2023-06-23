@@ -135,6 +135,8 @@ const DesktopPsychologische = () => {
                         Alles ist richtig, du musst keinerlei Erwartungen erf&#252;llen und kannst deine Last abgeben.
                     </Text>
 
+                    <Spacer />
+
                     <Heading>Welche Themen kann man bearbeiten?</Heading>
                     <Text fontSize={'xl'}>
                         Auf der psychischen Ebene:
@@ -213,7 +215,8 @@ const MobilePsychologische = () => {
 
     return (
         <Stack
-        py={10}>
+        py={10}
+        spacing={{ base: 8, md: 14 }}>
             {/* Psychologische */}
             <Stack>
                 <Heading>Psychologische Beratung</Heading>
@@ -230,7 +233,8 @@ const MobilePsychologische = () => {
                 </Text>
             </Stack>
 
-            <Stack>
+            <Stack
+            textAlign={'left'}>
                 <Heading>Welche Themen kann man bearbeiten?</Heading>
                 <UnorderedList>
                     <ListItem fontSize={'xl'}>Visionen und Ziele erarbeiten</ListItem>

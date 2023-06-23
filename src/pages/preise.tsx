@@ -1,5 +1,6 @@
 import { Box, Stack, Heading, Button, Text, Center, Link } from '@chakra-ui/react';
 import Layout from '@/components/Layout';
+import PriesePage from '@/components/Priese';
 
 
 export default function Preise() {
@@ -15,7 +16,7 @@ export default function Preise() {
 				<Heading>Priese</Heading>
 			</Stack>
 			<Stack>
-				
+				<PriesePage />
 			</Stack>
 		</Layout>
 	)
