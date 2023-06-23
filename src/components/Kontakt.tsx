@@ -14,7 +14,6 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { EmailIcon } from "@chakra-ui/icons";
-import KontaktForm from "./KontaktForm";
 
 
 const KontaktPage = () => {
