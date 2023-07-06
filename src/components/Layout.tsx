@@ -20,7 +20,7 @@ const Layout = ({ children, title }: LayoutProps) => {
 			</Head>
 			<main>
 				<Nav />
-				<Container maxW={'6xl'}>
+				<Container maxW={'6xl'} minH={'100vh'}>
 					{children}
 				</Container>
 				<Footer />

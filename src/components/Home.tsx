@@ -94,7 +94,7 @@ const DesktopHome = () => {
 					</UnorderedList>
 					<Box py={2}>
 						<Button>
-							<Link href="#">Mehr erfahren</Link>
+							<Link href="/psychologische#psychologische-beratung">Mehr erfahren</Link>
 						</Button>
 					</Box>
 				</Stack>
@@ -104,7 +104,7 @@ const DesktopHome = () => {
 
 			{/* Gesangstherapie */}
 			<HStack py={10}>
-				<Stack>
+				<Stack id="gesangtherapie">
 				<Heading>Gesangstherapie</Heading>
 				<Text fontSize={'xl'}>
 					Du kennst vielleicht schon das Prinzip einer Gespr&#228;chstherapie. Man spricht &#252;ber das, was einen besch&#228;ftigt, was einen belastet. 
@@ -141,7 +141,7 @@ const DesktopHome = () => {
 				py={2} 
 				pb={10}>
 				<Button>
-					<Link href="#">Mehr erfahren</Link>
+					<Link href="/psychologische#gesangtherapie">Mehr erfahren</Link>
 				</Button>
 			</Box>
 

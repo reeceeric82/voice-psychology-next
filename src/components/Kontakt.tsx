@@ -31,9 +31,9 @@ const DesktopKontakt = () => {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 6 }}
       >
-        <Heading>Kontaktiere mich:</Heading>
-        <Stack divider={<StackDivider />} spacing={4}>
+        <Stack spacing={4}>
           <Text fontSize={"3xl"}>Email:</Text>
+          <hr />
           <Text fontSize={"2xl"}>
             <EmailIcon mr={2} />
             <Link href="mailto:carolin@voicepsychology.de">
@@ -44,8 +44,10 @@ const DesktopKontakt = () => {
         {/* Email Section End */}
 
         {/* Social Media Section */}
-        <Stack divider={<StackDivider />} spacing={4}>
+        <Stack spacing={4}>
           <Text fontSize={"3xl"}>Social Media:</Text>
+          <Text fontSize={'xl'}>Du kannst mir auf folgenden Plattformen folgen</Text>
+          <hr />
           <Stack as={Box} textAlign={"left"} spacing={{ base: 8, md: 10 }}>
             <Text fontSize={"2xl"}>
               <FontAwesomeIcon icon={faInstagram} className="fab instagram" />
@@ -82,7 +84,6 @@ const DesktopKontakt = () => {
             </Text>
           </Stack>
         </Stack>
-        <Box py={3}></Box>
       </Stack>
     </>
   );
@@ -98,7 +99,6 @@ const MobileKontakt = () => {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 6 }}
       >
-        <Heading>Kontaktiere mich:</Heading>
         <Stack divider={<StackDivider />} spacing={4}>
           <Text fontSize={"3xl"}>Email:</Text>
           <Text fontSize={"2xl"}>
@@ -149,7 +149,7 @@ const MobileKontakt = () => {
             </Text>
           </Stack>
         </Stack>
-        <Box py={3}></Box>
+        
       </Stack>
     </>
   )

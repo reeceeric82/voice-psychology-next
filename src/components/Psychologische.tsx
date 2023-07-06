@@ -218,7 +218,7 @@ const MobilePsychologische = () => {
         py={10}
         spacing={{ base: 8, md: 14 }}>
             {/* Psychologische */}
-            <Stack>
+            <Stack id="psychologische-beratung">
                 <Heading>Psychologische Beratung</Heading>
                 <Text fontSize={'xl'}>
                     Psychologische Beratung kann helfen, wenn man mit der aktuellen Situation unzufrieden ist, sich belastet f&#252;hlt oder nicht wei&#223;,
@@ -260,7 +260,7 @@ const MobilePsychologische = () => {
             <StackDivider />
 
             {/* Gesangstherapie */}
-            <Stack>
+            <Stack id="gesangtherapie">
                 <Heading>Gesangstherapie</Heading>
                 <Text fontSize={'xl'}>Alles was du &#252;ber Gesangstherapie nach C.Wijnen & J.Spitzer wissen musst</Text>
 
@@ -309,7 +309,7 @@ const MobilePsychologische = () => {
                 </Text>
 
                 <Heading>Welche Themen kann man bearbeiten?</Heading>
-                <Text fontSize={'xl'}>
+                <Text fontSize={'2xl'} as={'b'}>
                     Auf der psychischen Ebene:
                 </Text>
 
@@ -322,7 +322,7 @@ const MobilePsychologische = () => {
                     <ListItem fontSize={'xl'}>Unterstützung bei psychischen St&#246;rungen (z.B. Angstst&#246;rungen, Depressionen, B&#252;hnenangst) </ListItem>
                 </UnorderedList>
 
-                <Text fontSize={'xl'}>Auf der k&#246;rperlichen Ebene:</Text>
+                <Text fontSize={'2xl'} as={'b'}>Auf der k&#246;rperlichen Ebene:</Text>
                 <UnorderedList>
                     <ListItem fontSize={'xl'}>Unterst&#252;tzung bei Atemproblemen</ListItem>
                     <ListItem fontSize={'xl'}>Unterst&#252;tzung des Immunsystems (z.B. bei Autoimmunerkrankungen)</ListItem>

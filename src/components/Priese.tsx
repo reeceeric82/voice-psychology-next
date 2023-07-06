@@ -53,7 +53,6 @@ const DesktopPriese = () => {
             </Button>
         </Box>
       </Stack>
-      <Box p={3}></Box>
     </Stack>
   );
 };
